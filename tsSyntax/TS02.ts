@@ -67,9 +67,10 @@ function getValue(value: string | number): string | number {
 let vFunc: number = getValue(1);
 
 
-// TS 02-7 斷言類型  //
+// TS 02-7 斷言類型  //both can work
 const getAssert = (value: string | number): number => {
-    return value.length
+    return (<string>value).length
+    return (value as string).length
 }
 
 
