@@ -47,7 +47,6 @@ tp = ["hello", 10];
 // tp = [10, "hello"]; // 順序不同會報錯 
 
 
-
 // TS 02-4 要允許多種型別的array要如何表示?
 
 
@@ -60,6 +59,8 @@ function funcType(name: string, age: number): number {
 funcType('Jinwei', 18);
 
 // TS 02-6 函數參數不確定該怎麼辦?  //
+function getValue(value: string): string;
+function getValue(value: number): number;
 function getValue(value: string | number): string | number {
     return value
 }

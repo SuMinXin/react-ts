@@ -13,7 +13,8 @@ interface I_states{
 class HelloClass extends React.Component<I_props, I_states> {
 
     state = {
-        age: 18
+        age: 18,
+        test: 'test'
     }
 
     render() {
