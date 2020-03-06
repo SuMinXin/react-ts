@@ -48,6 +48,11 @@ tp = ["hello", 10];
 
 
 // TS 02-4 要允許多種型別的array要如何表示?
+let multiTypeArr: (string|number)[] = [123, 'hello']
+// 2. tuple 把每個型別都寫出來  => 不推~ 
+let tpArr: [string, number] = ['hello', 123]  
+// 3. 多此一舉 ...擴展運算寫法
+let spreadArr:  [...(string|number)[]] = ['hey', 213]
 
 
 // TS 02-5 函數類型
