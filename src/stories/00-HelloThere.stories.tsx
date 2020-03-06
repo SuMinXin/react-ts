@@ -13,7 +13,7 @@ export default {
 export const SayHello = () => (
   <>
     <div>Class Component </div>
-    <HelloClass name="Jinwei" gender="male" />
+    <HelloClass name="MinXin" gender="female" />
     <HelloClass name="FM" gender="M" />
     <br />
     <div>Functional Component</div>
