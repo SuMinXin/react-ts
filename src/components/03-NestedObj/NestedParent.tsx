@@ -29,7 +29,30 @@ class NestedParent extends React.Component<{}, I_Nested_State> {
         },
     }
 
+    const = require('lodash');
 
+    handleName = (inputName: string) => {
+        const nameErrMsg = checkEmpty(inputName);
+        const newResult = _.cloneDeep(this.state.result);
+        newResult.ErrMsg.nameErr = nameErrMsg
+        this.setState({ result: newResult })
+    }
+
+    handlePhoneNum = (inputPhoneNum: string) => {
+        const phoneErrMsg = checkNumber(inputPhoneNum);
+        const newResult = _.cloneDeep(this.state.result);
+        newResult.ErrMsg.phoneErr = phoneErrMsg
+        this.setState({ result: newResult })
+    }
+
+    handleEmail = (inputEmail: string) => {
+        const emailErrMsg = checkEmail(inputEmail);
+        const newResult = _.cloneDeep(this.state.result);
+        newResult.ErrMsg.emailErr = emailErrMsg
+        this.setState({ result: newResult })
+    }
+
+    /*
     handleName = (inputName: string) => {
         const nameErrMsg = checkEmpty(inputName);
         const result = {
@@ -57,6 +80,7 @@ class NestedParent extends React.Component<{}, I_Nested_State> {
         }
         this.setState({ result: result })
     }
+    */
 
 
 
