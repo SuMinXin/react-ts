@@ -9,7 +9,7 @@ interface I_State {
 
 class LifeCycle extends React.Component<any, I_State> {
 
-
+//補state
 
     render() {
 
