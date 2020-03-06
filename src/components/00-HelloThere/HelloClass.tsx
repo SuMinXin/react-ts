@@ -1,6 +1,16 @@
 import * as React from 'react';
 
-class HelloClass extends React.Component<any, any> {
+interface I_props{
+    name:string,
+    gender:string
+}
+
+interface I_states{
+    age:number,
+    test:string
+}
+
+class HelloClass extends React.Component<I_props, I_states> {
 
     state = {
         age: 18
